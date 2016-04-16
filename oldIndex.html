@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Greetings</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link rel="icon" href="favicon.jpg" sizes="16x16" type="image/png">
+    <link href="normalize.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div id="Settings">
+        <ul id="GreetWord">
+            <li><a onclick="UpdateGreetWord('I\'m')" href="#">I'm</a></li>
+            <li><a onclick="UpdateGreetWord('Lets')" href="#">Lets</a></li>
+            <li><a onclick="UpdateGreetWord('Hi')" href="#">Hi<a></li>
+            <li><a onclick="UpdateGreetWord('Your')" href="#">Your</a></li>
+            <li><a onclick="UpdateGreetWord('Love')" href="#">Love</a></li>
+        </ul>
+    </div>
+    <div id="main">
+        <div class="greeting"><h1 id="GreetWordValue">I'm</h1></div>
+        <div class="name"><h2 id="UpdateName">GreetMe</h2></div>
+    </div>
+    <div id="instructions">
+        <h2>Instructions</h2>
+        <ul>
+            <li>Open Start Menu</li>
+            <li>Search Snipping Tool</li>
+            <li>Snip</li>
+            <li>Save</li>
+            <li>Upload as Facebook Cover</li>
+        </ul>
+    </div>
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<footer id="footer">
+        <input id="GreetValue" type="text" onkeyup="UpdateGreeting()" placeholder="GreetMe" value=""/>
+           
+		<div id="copyright">Designed By Taiven Rumph</div>
+        <nav id="menu">
+            <li><a onclick="ToggleInstructions()" href="#">Instructions</a></li>
+            <li><a href="http://taiven.github.io">About</a></li>
+        </nav>
+	</footer>
+     <script>
+        $( "#Greet" ).click(function(){
+           var NewName =  $( "#GreetValue" ).val();
+           if (window.console) {console.log(NewName)};
+           $('#UpdateName').text( NewName );
+        });
+        
+        function UpdateGreeting(){
+            var NewName =  $( "#GreetValue" ).val();
+            if (window.console) {console.log(NewName)};
+            $('#UpdateName').text( NewName );
+        };
+        
+        function UpdateGreetWord(Word){
+            var GreetWord = Word;
+            $('#GreetWordValue').text( GreetWord );
+             if (window.console) {console.log(GreetWord)};
+        };
+        
+        function ToggleInstructions(){
+            $( "#instructions" ).toggle( "slow", function() {
+                // Animation complete.
+            });
+        };
+    </script>
+  </body>
+</html>
