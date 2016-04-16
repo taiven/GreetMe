@@ -1,0 +1,143 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+
+html{
+    height: 667px;
+}
+
+body{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    font-family: "Merriweather";
+    background-color: #FFF;
+    color: #FFF;
+    margin: 0;
+    padding: 0;
+}
+
+
+#editor{
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    width: 80%;
+    background-color: #F5F5F5;
+}
+
+#DivToConvert{
+    height: 315px;
+    width: 828px;
+    margin: 5% auto;
+    border: 1px solid #DEDEDD;
+    background-color: #FFF;
+}
+
+#editor .greeting{
+    position: relative;
+    background-color: #222;
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    margin: -3% 2%;
+}
+
+#editor .greeting h1{
+    font-size: 480%;
+    line-height: 200px;
+    text-align: center;
+}
+
+#editor .name{
+    color: #222;
+    font-size: 500%;
+    margin: -14% 24%;
+    width: 70%;
+}
+
+#editor .name h2{
+    padding: 0;
+    margin: 0 5%;
+}
+
+
+#tools{
+    position: relative;
+    display: inline-block;
+    float: right;
+    background-color: #222;
+    width: 20%;
+    height: 100%;
+    font-size: 100%;
+}
+
+#tools #greeting, #tools #greetText{
+    display: block;
+    margin: 5% auto;
+    width: 60%;
+    padding: 2% 0;
+    text-align: center;
+    background-color: #444;
+    border: none;
+    border-radius: 5px;
+    color: #FFF;
+}
+
+#tools #generateImg, #tools #downloadImg{
+    position: relative;
+    font-size: 80%;
+    font-weight: normal;
+    text-align: center;
+    text-decoration: none;
+    width: 50%;
+    padding: 4% 0%;
+    margin: 0 auto;
+    border: none;
+}
+
+#tools #generateImg{
+    display: block;
+    background: #FFF;
+    color: #222;
+}
+
+#tools #downloadImg{
+    display: none;
+    background: #2EA22E;
+    color: #FFF;
+}
+
+#tools #footer{
+    position: absolute;
+    bottom: 0;
+    height: 20%;
+    width: 100%;
+}
+
+#tools #footer #copyright{
+    position: relative;
+    background: url('../img/wm.jpg');
+    height: 50%;
+    width: 30%;
+    background-size: 100% 100%;
+    margin: 0 auto;
+}
+#tools #footer #copyright a{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#tools #footer #menu{
+    list-style: none;
+    font-size: 80%;
+    margin: 0 auto;
+    width: 60%;
+}
+#tools #footer #menu li a{
+    text-decoration: none;
+    color: #999;
+    font-size: 80%;
+}
+#tools #footer #menu li:hover{text-decoration:underline;}
