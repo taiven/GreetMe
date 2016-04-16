@@ -27,7 +27,6 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                     if (type == "GreetingText") {
                         if (event.target.value != '') {
                             this.GreetingText = event.target.value;
-                            console.log("GreetingText: " + this.GreetingText);
                         }
                         else {
                             this.GreetingText = 'GreetMe';
@@ -36,7 +35,6 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                     else if (type == "Greeting") {
                         if (event.target.value != '') {
                             this.Greeting = event.target.value;
-                            console.log("Greeting: " + this.Greeting);
                         }
                         else {
                             this.Greeting = "I'm";
@@ -52,11 +50,11 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                             var width = 828;
                             var height = 315;
                             var type = "jpeg";
-                            document.body.appendChild(canvas);
+                            //document.body.appendChild(canvas);
                             //Convert and generate download link
                             var JPG = Canvas2Image.convertToJPEG(canvas, width, height, type);
-                            document.body.appendChild(canvas);
-                            console.log("This should be url: " + JPG.src);
+                            //document.body.appendChild(canvas);
+                            //console.log("This should be url: " + JPG.src);
                             //Clean up
                             //document.body.removeChild(canvas);
                             document.getElementById('generateImg').setAttribute("style", "display:none;");

@@ -39,14 +39,14 @@ export class GreetComponent {
         if(type == "GreetingText"){
             if (event.target.value != '') {
                 this.GreetingText = event.target.value;
-                console.log("GreetingText: " + this.GreetingText);
+                //console.log("GreetingText: " + this.GreetingText);
             } else {
                 this.GreetingText = 'GreetMe';
             }
         }else if(type == "Greeting"){
             if (event.target.value != '') {
                 this.Greeting = event.target.value;
-                console.log("Greeting: " + this.Greeting)
+                //console.log("Greeting: " + this.Greeting)
             } else {
                 this.Greeting = "I'm";
             }
@@ -63,12 +63,12 @@ export class GreetComponent {
                let width = 828;
                let height = 315;
                let type = "jpeg";
-               document.body.appendChild(canvas);
+               //document.body.appendChild(canvas);
 
                //Convert and generate download link
                let JPG = Canvas2Image.convertToJPEG(canvas, width, height, type);
-               document.body.appendChild(canvas);
-               console.log("This should be url: " + JPG.src);
+               //document.body.appendChild(canvas);
+               //console.log("This should be url: " + JPG.src);
                //Clean up
                //document.body.removeChild(canvas);
                document.getElementById('generateImg').setAttribute("style", "display:none;");
